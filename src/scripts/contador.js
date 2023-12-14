@@ -1,5 +1,5 @@
 export default function contador(){
-    const dataDoEvento = new Date("01 25, 2024 19:00:00");
+    const dataDoEvento = new Date("12 16, 2023 14:00:00");
     const timeStampDoEvento = dataDoEvento.getTime();
 
     const contaTempo = setInterval(function(){
