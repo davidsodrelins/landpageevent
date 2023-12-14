@@ -47,6 +47,8 @@
 
     &__image{
         max-width: 360px;
+        max-height: 360px;
+        
     }
 
     @media(max-width: 640px){
