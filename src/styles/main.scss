@@ -1,0 +1,21 @@
+@use'config/reset';
+@use'config/variables/color.scss';
+@use'_hero';
+@use 'components/infos_bar';
+@use 'components/_buttons';
+@use '_event';
+
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px){
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px){
+        max-width: 90%;
+    }
+}

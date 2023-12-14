@@ -1,0 +1,61 @@
+@use'config/variables/color.scss';
+
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: color.$overlayColor;
+        content: '';
+    }
+
+    div{
+        text-align: center;
+        position: relative;
+    }
+
+    &__logo{
+        font-family: 'Play', sans-serif;
+        font-size: 60px;
+
+        span{
+            color: color.$spanColor;
+            font-size: 70px;
+        }
+    }
+
+    &__text{
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    @media(max-width: 640px){
+        padding: 40px 0 ;
+        &__logo{
+            font-size:40;
+
+            span{
+                font-size: 50px;
+            }
+        }
+
+        &__text{
+            font-size: 30px;
+            line-height: 45px;
+            margin: 24px 0;
+        }
+    }
+}
